@@ -13,11 +13,11 @@ export default function HeroSection() {
       const scrollThreshold = 100;
       if (scrollPosition > scrollThreshold) {
         imageElement.classList.add("scrolled");
-      }else{
+      } else {
         imageElement.classList.remove("scrolled");
       }
     };
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll);
   }, []);
   return (
     <section className=" w-full pt-36 md:48 pb-10">
@@ -39,7 +39,7 @@ export default function HeroSection() {
         </div>
         <div className=" space-x-3">
           <Link href="/dashboard">
-            <Button  size="lg" className="px-8">
+            <Button size="lg" className="px-8">
               Get Started
             </Button>
           </Link>

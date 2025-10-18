@@ -4,7 +4,6 @@ import {
   SignInButton,
   UserButton,
 } from "@clerk/nextjs";
-import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import {
@@ -35,13 +34,7 @@ export default async  function Header() {
     >
       <nav className=" container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/">
-          <Image
-            src="/logo.png"
-            alt="ai career coach logo"
-            width={200}
-            height={60}
-            className=" h-12 py-1 w-auth object-contain"
-          />
+          <h1 className=" text-3xl font-semibold">ElevateAI</h1>
         </Link>
         <div className=" flex items-center space-x-2">
           <SignedIn>

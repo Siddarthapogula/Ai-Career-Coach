@@ -6,5 +6,13 @@ export default async function AICoverLetters() {
   if (!isOnboarded) {
     redirect("/onboarding");
   }
-  return <div>AICoverLetters</div>;
+  return (
+    <div>
+      <div>Comming Soon</div>
+      <p>
+        Here you can paste the Job description, We give you a nourished cover
+        letter.
+      </p>
+    </div>
+  );
 }

@@ -34,7 +34,7 @@ export default function Home() {
                 return (
                   <Card
                     key={index}
-                    className="border-2 hover:border-amber-50 transition duration-300"
+                  className="border-2 hover:border-amber-50 transition duration-300"
                   >
                     <CardContent className=" pt-6 text-center flex flex-col items-center">
                       <div className=" flex flex-col items-center justify-center">
