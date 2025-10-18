@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
             <ClientToast/>
             <footer className=" bg-muted/50 py-12">
               <div className=" container mx-auto px-4 text-center">
-                <p>Made with ♡ by Siddartha Pogula</p>
+                <p>Made with  by Siddartha Pogula</p>
               </div>
             </footer>
           </ThemeProvider>
