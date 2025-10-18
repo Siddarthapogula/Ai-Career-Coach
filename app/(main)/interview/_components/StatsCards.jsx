@@ -8,7 +8,7 @@ export default function StatsCards({ assessments }) {
       (sum, assessment) => (sum + assessment?.quizScore),
       0
     );
-    return (total / assessments.length).toFixed(1);
+    return (total / assessments.length)?.toFixed(1);
   };
   const getLastestAssessment = () => {
     if (!assessments?.length) return 0;
@@ -56,7 +56,7 @@ export default function StatsCards({ assessments }) {
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">
-            {getLastestAssessment()?.quizScore.toFixed(1) || 0}
+            {getLastestAssessment()?.quizScore?.toFixed(1) || 0}
           </div>
           <p className=" text-xs text-muted-foreground">
             Most Recent Assessment

@@ -98,9 +98,9 @@ export default function DashboardView({ insights }) {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">
-              {insights.growthRate.toFixed(1)}%
+              {insights?.growthRate?.toFixed(1)}%
             </div>
-            <Progress className="mt-2" value={insights.growthRate.toFixed(1)} />
+            <Progress className="mt-2" value={insights?.growthRate?.toFixed(1)} />
           </CardContent>
         </Card>
 
@@ -110,7 +110,7 @@ export default function DashboardView({ insights }) {
             <BriefcaseIcon className={` h-4 w-4 `} />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{insights.demandLevel}</div>
+            <div className="text-2xl font-bold">{insights?.demandLevel}</div>
             <div
               className={` h-2 w-full rounded-full mt-2 ${getDemandLevelColor(
                 insights.demandLevel

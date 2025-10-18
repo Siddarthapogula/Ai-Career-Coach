@@ -28,9 +28,9 @@ export default function QuizResult({
         )}
         <div className=" space-y-4">
           <h3 className=" font-medium">Question Reveiw</h3>
-          {result.questions.map((q) => (
-            <div className=" border border-lg  p-4 space-y-2">
-              <div className=" flex items-start justify-between gapy-2">
+          {result.questions.map((index, q) => (
+            <div key={index} className=" border border-lg  p-4 space-y-2">
+              <div  className=" flex items-start justify-between gapy-2">
                 <p className=" font-medium">{q.question}</p>
                 {q.isCorrect ? (
                   <CheckCircle2 className=" h-5 w-5 text-green-500 flex-shrink-0 " />
